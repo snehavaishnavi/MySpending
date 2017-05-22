@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.hw2try.DelExpenceActivity"
+    android:focusableInTouchMode="true">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Expence_Label"
+        android:id="@+id/ExID"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Select_Expence_Label"
+        android:id="@+id/selectExDelExID"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_Label"
+        android:id="@+id/deleteID"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/ExID"
+        android:layout_toEndOf="@+id/ExID" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_Label"
+        android:id="@+id/CancelDelExID"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/selectExDelExID"
+        android:layout_alignEnd="@+id/selectExDelExID" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ExID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ExNameDelExID" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Category_Label"
+        android:layout_below="@+id/ExNameDelExID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/categoryID"
+        android:layout_marginTop="15dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dropDownDelExID"
+        android:layout_below="@+id/categoryID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Amount_Label"
+        android:id="@+id/amountID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dropDownDelExID"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amountID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/amountShowDelExID" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Date_Label"
+        android:id="@+id/dateID"
+        android:layout_below="@+id/amountShowDelExID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/CancelDelExID"
+        android:layout_alignEnd="@+id/CancelDelExID"
+        android:id="@+id/dateShowDelExID" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dateID"
+        android:layout_toEndOf="@+id/dateShowDelExID"
+        android:src="@drawable/icon"
+        android:layout_alignBottom="@+id/dateShowDelExID"
+        android:layout_toRightOf="@+id/dateShowDelExID"
+        android:contentDescription="@string/calender_date"
+        android:id="@+id/datelabelDelExID" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/browseImageDelExID"
+        android:layout_below="@+id/dateShowDelExID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/browse_img"
+        android:layout_toStartOf="@+id/deleteID"
+        android:layout_toLeftOf="@+id/deleteID"
+        android:contentDescription="@string/image"
+        android:layout_above="@+id/deleteID" />
+
+</RelativeLayout>
+

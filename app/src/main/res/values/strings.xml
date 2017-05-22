@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">HW2try</string>
+    <string name="Ad_Ex_Label">Add Expence</string>
+    <string name="Edit_Ex_Label">Edit Expence</string>
+    <string name="Delete_Ex_Label">Delete Expence</string>
+    <string name="Show_Ex_Label">Show Expences</string>
+    <string name="Finish_Label">Finish</string>
+    <string name="ADD_Title_Label">Add An Expence</string>
+    <string name="Expence_Label">Expence Name</string>
+    <string name="Ex_name_label" />
+    <string name="Category_Label">Category</string>
+    <string name="SelectCate_Label">Select Category</string>
+    <string name="SelectCategory_Label" />
+    <string name="Select_Label">Select Category</string>
+    <string name="select_Label">Select Category</string>
+    <string name="Amount_Label">Amount</string>
+    <string name="amount_show_Label" />
+    <string name="Date_Label">Date</string>
+    <string name="date_show_Label" />
+    <string name="Add_ex_button_Label">Add Expence</string>
+    <string name="Select_Expence_Label">Select Expence</string>
+    <string name="cancel_Label">Cancel</string>
+    <string name="Save_Label">Save</string>
+    <string name="delete_Label">Delete</string>
+    <string name="Expencedetail_label">Expence Details</string>
+    <string name="name_Label">Name:</string>
+    <string name="name_Show_Label" />
+    <string name="category_Lael">Category:</string>
+    <string name="category_show_Label" />
+    <string name="category_Show_" />
+    <string name="amountshow_Label" />
+    <string name="amountshow" />
+    <string name="receipt_Label">Receipt</string>
+    <string name="image">image</string>
+    <string name="calender_date">calender date</string>
+    <string-array name="category_list">
+        <item>Select a category</item>
+        <item>groceries</item>
+        <item>Invoice</item>
+        <item>Transportation</item>
+        <item>Shopping</item>
+        <item>Rent</item>
+        <item>Trips</item>
+        <item>Utilities</item>
+        <item>Other</item>
+
+    </string-array>
+
+</resources>

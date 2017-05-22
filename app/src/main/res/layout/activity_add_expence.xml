@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.hw2try.AddExpenceActivity">
+
+
+<ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/datelabelDelExID"
+            android:layout_gravity="right"
+            android:src="@drawable/icon"
+            android:layout_alignTop="@+id/dateShowAddExID"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+    android:contentDescription="@string/calender_date" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateShowAddExID"
+            android:hint="@string/date_show_Label"
+            android:inputType="date"
+            android:layout_below="@+id/datelabelDelExID"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/browseImageAddExID"
+            android:visibility="visible"
+            android:src="@drawable/browse_img"
+            android:layout_above="@+id/AddExpenceID"
+            android:layout_marginBottom="43dp"
+            android:contentDescription="@string/image" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Add_ex_button_Label"
+            android:id="@+id/AddExpenceID"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ADD_Title_Label"
+            android:id="@+id/ADDExID"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/AddExpenceID"
+            android:layout_alignStart="@+id/AddExpenceID" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Expence_Label"
+            android:id="@+id/ExID"
+            android:layout_below="@+id/ADDExID"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ExNameAddExID"
+            android:layout_below="@+id/ExID"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/Ex_name_label" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Category_Label"
+            android:id="@+id/categoryID"
+            android:layout_below="@+id/ExNameAddExID"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dropDownAddExID"
+            android:layout_below="@+id/categoryID"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Amount_Label"
+            android:id="@+id/amountID"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/dropDownAddExID"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Date_Label"
+            android:id="@+id/datelabelDelExID"
+            android:hint="@string/Date_Label"
+            android:phoneNumber="false"
+            android:password="false"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/amountShowAddExID"
+            android:layout_below="@+id/amountID"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/datelabelDelExID"
+            android:layout_alignEnd="@+id/datelabelDelExID"
+            android:inputType="numberDecimal" />
+
+</RelativeLayout>
+
